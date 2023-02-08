@@ -1,0 +1,460 @@
+
+  /* ...............................media query for tablit responsive ........................................... */
+  @media only screen and (max-width: 900px) and (min-width: 550px) {
+    .container {
+      display: flex;
+      overflow: hidden;
+      flex-direction: column;
+      height: 100%;
+      
+    }
+    svg {
+        margin-top: 200px;
+        margin-left: 60px;
+        margin-bottom: 150px;
+      }
+    nav {
+      background: #514390;
+      /* position: fixed; */
+      /* width: 100%; */
+    }
+  .header-content{
+      display: flex;
+      padding: 30px 10px;
+      gap: 30px;
+      
+  }
+  .image-with-content{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+
+}
+    #sidebar {
+      display: none;
+    }
+    #main{
+      display: block;
+     }
+
+     /* .....................sidebar ............... */
+    .closebtn {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+  }
+        /* nave box area 1 */
+      .nave-box-area-1{
+          background-color: #fff;
+          width: 30%;
+          margin-left: 20px;
+          margin-top: 20px;
+          border-radius: 5px;
+        }
+      .main-nave-1{
+          display: flex;
+          padding-top: 10px;
+          gap: 25px;
+          cursor: pointer;
+      }
+
+
+        /* nave box area 2 */
+    .nave-box-area-2{
+      
+      margin-top: 20px;
+      margin-left: 20px;
+      width: 100%;
+      
+    }
+    .main-nave-2{
+      display: flex;
+      justify-content:space-evenly;
+      /* flex-direction: column; */
+      gap: 20px;
+    }
+    .left-side{
+      display: flex;
+      /* gap: 70px; */
+      align-items: start;
+    }
+    
+    /* main content area  */
+
+.main-containt-box{
+  background-color: #fff;
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 95%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.main-containt{
+ padding: 10px 20px;  
+}
+.content{
+ display: flex;
+ gap: 12px;
+}
+.img{
+ display: flex;
+ gap: 15px;
+}
+.first-content h3{
+  font-size: small;
+}
+.col-1-content{
+ display: flex;
+}
+.set-content{
+ display: flex;
+ gap: 15px;
+}
+.set-content label{
+ opacity: 0.5;
+ font-size: small;
+}
+.set-content p{
+  text-align: center;
+  font-size: small;
+
+}
+.col-1-content{
+ display: flex;
+ flex-direction: column;
+ /* align-items: center; */
+}
+.row3-content{
+ width: 100%;
+ padding-top: 2px;
+ opacity: 0.5;
+ font-size: small;
+}
+
+
+  }
+
+
+ /* ...............................media query for mobile responsive ........................................... */
+ @media only screen and (max-width: 549px) and (min-width: 300px) {
+  .container {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    height: 100%;
+  }
+  svg {
+    margin-top: 200px;
+    margin-left: 90px;
+    margin-bottom: 150px;
+  }
+  nav {
+    background: #514390;
+  }
+.header-content{
+  display: flex;
+  padding: 15px 10px;
+  gap: 15px;
+}
+.image-with-content{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+}
+  #sidebar {
+    display: none;
+  }
+  #main{
+    display: block;
+   }
+   /* ..................sidebar................... */
+   .remove-sidebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+   }
+.closebtn {
+  font-size: 36px;
+  color: #fff;
+  
+}
+      /* nave box area 1 */
+    .nave-box-area-1{
+        background-color: #fff;
+        width: 50%;
+        margin-left: 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+    .main-nave-1{
+        display: flex;
+        padding-top: 10px;
+        gap: 25px;
+        cursor: pointer;
+    }
+
+
+      /* nave box area 2 */
+  .nave-box-area-2{
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100%;
+    
+  }
+  .main-nave-2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .left-side{
+    display: flex;
+    gap: 70px;
+    align-items: start;
+  }
+ 
+  .left-side h2{
+    padding-left: 20px;
+  }
+  .right-side{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+  }
+
+  
+  /* main content area  */
+
+.main-containt-box{
+background-color: #fff;
+margin-top: 10px;
+margin-left: 10px;
+width: 95%;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+}
+.main-containt{
+padding: 10px 20px;  
+}
+.content{
+display: flex;
+gap: 15px;
+flex-direction: column;
+}
+.img{
+display: flex;
+gap: 10px;
+}
+
+.first-content h3{
+font-size: x-small;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.col-1-content{
+display: flex;
+}
+.set-content{
+display: flex;
+gap: 10px;
+justify-content: center;
+}
+.set-content label{
+opacity: 0.5;
+font-size: x-small;
+
+}
+.set-content p{
+font-size: x-small;
+text-align: center;
+
+}
+.col-1-content{
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+}
+.row3-content{
+width: 100%;
+padding-top: 2px;
+opacity: 0.5;
+font-size: x-small;
+text-align: center;
+}
+#pagination{
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+     width: 100%;
+     margin-top: 30px;
+     display: flex;
+     justify-content: end;
+     padding-bottom: 30px;
+}
+  }
+
+ /* ...............................media query for small mobile responsive ........................................... */
+ @media only screen and (max-width: 374px) and (min-width: 100px) {
+  .container {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    height: 100%;
+    
+  }
+  svg {
+    margin-top: 200px;
+    margin-left: 90px;
+    margin-bottom: 150px;
+  }
+  nav {
+    background: #514390;
+  }
+.header-content{
+    display: flex;
+    padding: 5px 5px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+  #sidebar {
+    display: none;
+  }
+  #main{
+    display: block;
+   }
+      /* ..................sidebar................... */
+      .closebtn {
+      font-size: 36px;
+      color: #fff;
+      display: block;
+    }
+      /* nave box area 1 */
+    .nave-box-area-1{
+        background-color: #fff;
+        width: 80%;
+        margin-left: 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+      }
+    .main-nave-1{
+        display: flex;
+        padding-top: 10px;
+        gap: 25px;
+        cursor: pointer;
+    }
+
+
+      /* nave box area 2 */
+  .nave-box-area-2{
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100%;
+
+  }
+  .main-nave-2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    /* gap: 20px; */
+  }
+  .left-side{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: start;
+  }
+ 
+  .left-side h2{
+    padding-left: 20px;
+  }
+  .right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+    padding-top: 5px;
+}
+  /* main content area  */
+
+.main-containt-box{
+background-color: #fff;
+margin-top: 10px;
+margin-left: 5px;
+width: 95%;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+}
+.main-containt{
+padding: 10px 20px;  
+}
+.content{
+display: flex;
+gap: 15px;
+flex-direction: column;
+}
+.img{
+display: flex;
+gap: 10px;
+}
+
+.first-content h3{
+font-size: xx-small;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.col-1-content{
+display: flex;
+}
+.set-content{
+display: flex;
+gap: 10px;
+}
+.set-content label{
+opacity: 0.5;
+font-size: xx-small;
+}
+.set-content p{
+font-size: xx-small;
+
+}
+.col-1-content{
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+}
+.row3-content{
+width: 100%;
+padding-top: 2px;
+opacity: 0.5;
+font-size: xx-small;
+text-align: center;
+}
+
+#pagination{
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+     width: 100%;
+     margin-top: 30px;
+     display: flex;
+     justify-content: end;
+     padding-bottom: 30px;
+}
+ 
+  }

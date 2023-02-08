@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_query.css">
+    <title>Promotion Task</title>
+</head>
+<body>
+    <!-- loader timer  -->
+            <div class="timer-container">
+                <div class="timer">
+                  <svg version="1.1" viewBox="0 0 300 300" preserveAspectRatio="none" style=" width:400px; height:400px; top:0; left:0;">
+                    <circle cx="100" cy="100" r="57" id="pink-halo" fill="none" stroke="#514390" stroke-background="#A3A3A3" stroke-width="15" stroke-dasharray="0, 361" transform="rotate(-90,100,100)" />
+                    <text id="myTimer" text-anchor="middle" x="100" y="122" style="font-weight: bold; font-size: 50px;fill:#6E5CC2"></text>
+                  </svg>
+                </div>
+            </div>
+    <div class="container">
+        <nav>
+            <header>
+              
+                <div class="header-content">
+                 
+                    <span>
+                      <div id="main">
+                        <button class="openbtn" onclick="openNav()">☰</button>  
+                        
+                      </div>
+                      Nurecny</span>
+                    <div class="image-with-content">
+                    <img src="images/icons/Icon ionic-md-notifications.png" alt="">
+                    <img src="images/header-img/header_1.png" alt="header img" />
+                    <ul>
+                        <li>Luke Astero</li>
+                        <li>Admin</li>
+                    </ul>
+                    
+                    </div>
+                </div>
+            </header>
+        </nav>
+         <!-- side bar  -->
+         <div id="sidebar">
+            <!-- 1 -->
+            <div class="side-bar-content">
+                <img src="images/icons/user/Icon awesome-user-alt.png" alt="icon">
+                <span>Profle</span>
+            </div>
+            <!-- 2 -->
+            <div class="side-bar-content active">
+                <img src="images/icons/Icon awesome-user-friends.svg" alt="icon">
+                <span>Users</span>
+            </div>
+              <!-- 3 -->
+              <div class="side-bar-content">
+                <img src="images/icons/Icon awesome-solar-panel/Icon awesome-solar-panel.png" alt="icon">
+                <span>Control Panel</span>
+            </div>
+              <!-- 4 -->
+              <div class="side-bar-content">
+                <img src="images/icons/Icon awesome-window-maximize/Icon awesome-window-maximize.png" alt="icon">
+                <span>Projects</span>
+            </div>
+              <!-- 5 -->
+              <div class="side-bar-content">
+                <img src="images/icons/Icon awesome-tasks/Icon awesome-tasks.png" alt="icon">
+                <span>Tasks</span>
+            </div>
+              <!-- 6 -->
+              <div class="side-bar-content">
+                <img src="images/icons/Icon ionic-md-arrow-dropright-circle/Icon ionic-md-arrow-dropright-circle.png" alt="icon">
+                <span>Logs</span>
+            </div>
+              <!-- 7 -->
+              <div class="side-bar-content">
+                <img src="images/icons/Icon ionic-ios-chatboxes/Icon ionic-ios-chatboxes.png" alt="icon">
+                <span>Group Chats</span>
+            </div>
+             <!-- 8 -->
+             <div class="side-bar-content">
+                <img src="images/icons/Icon ionic-md-document/Icon ionic-md-document.png" alt="icon">
+                <span>Reports</span>
+            </div>
+
+        </div>
+        <!-- ...........................main..................................  -->
+        <main>
+            <!-- main nav area 1 -->
+            <div class="nave-box-area-1">
+                <div class="main-nave-1">
+                <a href="index.html"> 
+                    <div class="link-one one-bottom-boder">
+                        <span>User</span>
+                    </div>
+                </a>
+                <a href="admin.html"> 
+                    <div class="link-two">
+                        <span>Admin</span>
+                    </div>
+                </a>
+                </div>
+            </div>
+            <!-- main nav area 2 -->
+            <div class="nave-box-area-2">
+                <div class="main-nave-2">
+                    <div class="left-side">
+                    <h2>User</h2>
+                    <a href="#" class="btn">Export to CSV</a>
+                    </div>
+                    <div class="right-side">
+                        <div class="search-box">
+                            <img src="images/icons/Icon feather-search/Icon feather-search.png" alt="icon">
+                            <input type="text" placeholder="type anything" id="searchInput">
+                        </div>
+                        <a href="#" id="searchBtn">Search</a>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <!-- main containt  -->
+
+            <!-- div.main-content-box  -->
+                    <!-- page 1 -->
+                    <div id="page1" class="page-content">
+                        <!-- Page 1 content goes here -->
+                            <div id="Apidata_1"> 
+                                <div class="main-containt-box">
+                                </div>  
+                        </div>
+                    </div>
+                    <!-- page 2  -->
+                    <div id="page2" class="page-content">
+                        <!-- Page 1 content goes here -->
+                            <div id="Apidata_2"> 
+                                <div class="main-containt-box">
+                        
+                                </div>  
+                        </div>
+                        </div>
+
+
+
+                        <!-- .................................pagination................................  -->
+                        <div id="pagination">
+                            <div class="pag">
+                                <a href="#" data-page="1" class="left-arrow"><img src="images/icons/Icon ionic-ios-arrow-down (1)/Icon ionic-ios-arrow-down.png" alt="icon"></a>
+                                <a class="active" href="#" data-page="1">1</a>
+                                <a href="#" data-page="2">2</a>
+                                
+                                <a href="#" data-page="2" class="right-arrow"><img src="images/icons/Icon ionic-ios-arrow-down/Icon ionic-ios-arrow-down.png" alt="icon"></a>
+                            </div>
+                        </div>
+        </main>
+
+    </div>
+
+<script src="script.js"></script>
+<!-- jqyery  -->
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+ <!-- custom jquery  -->
+<script>
+    $(document).ready(function() {
+  $('.page-content').hide();
+  $('#page1').show();
+
+  $('#pagination a').click(function(e) {
+    e.preventDefault();
+    var page = $(this).data('page');
+    $('.page-content').hide();
+    $('#page' + page).show();
+    $('#pagination a').removeClass('active');
+    $(this).addClass('active');
+  });
+});
+</script>
+<!-- page loader  -->
+                <script>
+                     setTimeout(function(){
+                         $('.timer').fadeToggle();
+                     }, 30000);
+                 </script> 
+                <script>                
+                 $(document).ready(function () {
+                    var timerContainer = $('.timer-container');
+                    var timer = $('.timer');
+                    var circle = document.getElementById('pink-halo');
+                    var myTimer = document.getElementById('myTimer');
+                    var t = 30;
+                    var interval = 30;
+                    var angle = 0;
+                    var angle_increment = 360/t;
+                    var intervalCounter = 0;
+                
+                    timerContainer.fadeIn();
+                    window.timer = window.setInterval(function () {
+                      intervalCounter ++;    
+                      circle.setAttribute("stroke-dasharray", angle + ", 361");
+                
+                      myTimer.innerHTML = t - parseInt((angle/360)*t);
+                
+                      if (angle >= 360) {
+                        window.clearInterval(window.timer);
+                        timerContainer.fadeOut();
+                      }
+                
+                      angle += angle_increment/(1000/interval);
+                    }.bind(this), interval);
+                  });
+                </script>
+
+                  
+<script>
+    $(document).ready(function() {
+      $('.container').hide();
+  
+      setTimeout(function(){
+        $('.timer-container').fadeToggle();
+        $('.container').fadeToggle();
+      }, 30000);
+    });
+  </script>          
+
+
+</body>
+</html>

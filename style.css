@@ -1,0 +1,334 @@
+/* font  */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+html{
+    box-sizing: border-box;
+    overflow-y: scroll;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.6px;
+    line-height: 1.4;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+:root {
+    --nave-bg-color: #514390;
+    --side-bar-bg-color: #6E5CC2;
+    --body-bg-color: #cbe0dd;
+    --active-color: #7D6CCC;
+    --main-radius: 5px;
+    --main-padding: 5px;
+  }
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  a{
+    text-decoration: none;
+  }
+  .container {
+    background-color: #fff;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 15% 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.5fr 1.2fr 0.3fr;
+    grid-template-areas:
+      "nav nav nav nav nav"
+      "sidebar main main main main"
+      "sidebar main main main main"
+      "sidebar main main main main";
+ 
+  }
+  /*................. nave bar .............................  */
+  nav {
+    background: var(--nave-bg-color);
+    grid-area: nav;
+    /* position: fixed; */
+    width: 100%;
+  }
+.header-content{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+
+    width: 95%;
+}
+#main{
+  display: none;
+ }
+span{
+  display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration-line:none;
+    color: #fff;
+    font-size: 25px;
+}
+svg {
+  margin-top: 200px;
+  margin-left: 50px;
+  margin-bottom: 150px;
+}
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: var(--nave-bg-color);
+  color: white;
+  border: none;
+}
+.image-with-content{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+}
+ul li{
+    list-style-type: none;
+    color: #fff;
+}
+
+  /*.................................. sidebar...............................  */
+  #sidebar {
+    background: var(--side-bar-bg-color);
+    grid-area: sidebar;
+    padding-top: var(--main-padding);
+  }
+  .closebtn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  font-size: 36px;
+  color: #fff;
+  display: none;
+}
+  /* side bar  */
+.side-bar-content{
+    display: flex;
+    align-items: center;
+    padding-block: 15px;
+    padding-left: 20px;
+    gap: 20px;
+    cursor: pointer;
+    
+}
+.side-bar-content span{
+    font-size: large;
+}
+.active{
+    border-left: 7px solid #fff;
+    background-color: var(--active-color);
+}
+
+
+  /* ...................main area ................................ */
+  main {
+    background: #F7F7F7;
+    grid-area: main;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+  }
+  /* nave box area 1 */
+.nave-box-area-1{
+    background-color: #fff;
+    width: 20%;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+.main-nave-1{
+    display: flex;
+    padding-top: 10px;
+    gap: 25px;
+    cursor: pointer;
+}
+.link-one{
+    padding:10px 20px;
+}
+.link-one span{
+    font-size: large;
+    color: #000;
+}
+.one-bottom-boder{
+    border-bottom: 4px solid #514390;
+}
+.link-two{
+    padding:10px 20px;
+
+}
+.link-two span{
+    font-size: large;
+    color: #000;
+}
+ /* nave box area 2 */
+.nave-box-area-2{
+    /* background-color: #fff; */
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 85%;
+    /* border-radius: 5px; */
+}
+.main-nave-2{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+}
+.left-side{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.left-side span{
+    color: #000;
+    font-size: large;
+}
+.btn{
+    padding: 8px 40px;
+    background-color: #fff;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+}
+.left-side a{
+    color: #000;
+    text-decoration: none;
+}
+
+.right-side{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.search-box img{
+  width: 15px;
+  height: 15px;
+    position: absolute;
+    margin: 8.5px;
+}
+.right-side input{
+    border: 2px solid gainsboro;
+    padding: 8px 30px;
+    border-radius: 5px;
+}
+input[type=text]:focus {
+    border: 2px solid gainsboro;
+  }
+.right-side a{
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 20px;
+    background-color: #6E5CC2;
+   border: none;
+   border-radius: 5px;
+
+}
+
+/* main content area  */
+
+.main-containt-box{
+  background-color: #fff;
+     margin-top: 10px;
+     margin-left: 20px;
+     width: 88%;
+     border-radius: 5px;
+}
+.main-containt{
+    padding: 20px 30px;  
+}
+.content{
+    display: flex;
+    gap: 20px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-1-content{
+    display: flex;
+}
+.set-content{
+    display: flex;
+    gap: 20px;
+}
+.set-content label{
+    opacity: 0.5;
+}
+.col-1-content{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.row3-content{
+    width: 60%;
+    padding-top: 2px;
+    opacity: 0.5;
+}
+  /*.............................................. Pagination.......................................  */
+
+#pagination{
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+     width: 100%;
+     margin-top: 30px;
+     display: flex;
+     justify-content: end;
+     padding-bottom: 30px;
+     padding-right: 110px;
+}
+.pag {
+    clear: both;
+    content: "";
+    display: table;
+    margin: 0 10px 10px;
+  }
+  .pag a {
+    float: left;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: gray;
+    background-color: #fff;
+    /* box-shadow: #fff; */
+  }
+  .pag a:nth-child(1) {
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .pag a:nth-child(2) {
+    margin-right: 10px;
+    border-radius: 5px;
+    
+  }
+  .pag a:nth-child(3) {
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .pag a:nth-child(4) {
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .pag a:nth-child(5) {
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .pag a:nth-child(6) {
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  .pag a.active {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0px 0px 5px #00000029;
+  }
+
+/* page loader  */
+
+.timer{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color:#FFFFFF;
+  /* height: 110vh;
+  width: 100vw; */
+  overflow: hidden;
+  }
